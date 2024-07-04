@@ -1,0 +1,16 @@
+{
+    "landingPage": "/wp-admin/?welcome=0",
+    "preferredVersions": {
+      "wp": "beta",
+      "php": "8.0"
+    },
+    "steps": [
+      {
+        "step": "login"
+      },
+      {
+        "step": "wp-cli",
+        "command": "wp site empty --yes"
+      }
+    ]
+  }

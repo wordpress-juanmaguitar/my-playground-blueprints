@@ -1,0 +1,25 @@
+{
+    "landingPage": "/wp-admin",
+    "preferredVersions": {
+      "wp": "beta",
+      "php": "8.0"
+    },
+    "steps": [
+      {
+        "step": "login"
+      },
+      {
+        "step": "writeFile",
+        "path": "/wordpress/wp-content/plugins/1-plugin.php",
+        "data": {
+          "resource": "url",
+          "url": "https://gist.githubusercontent.com/juanmaguitar/ddaf2b097ac5562cfe6ede5fc58313de/raw/e166b4ff1a55d460aa466a68862af6967dfbe935/beginner-friendly-playground.php"
+        }
+      },
+      {
+        "step": "activatePlugin",
+        "pluginName": "Beginner Friendly Playground",
+        "pluginPath": "1-plugin.php"
+      }
+    ]
+  }
